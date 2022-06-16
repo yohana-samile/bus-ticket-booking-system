@@ -1,0 +1,112 @@
+/* buttons */
+.kvms-btn {
+    background-color: #1f5e76;
+    color: #fff;
+    transition: all 1s;
+}
+.kvms-btn:hover {
+    background-color: #133948;
+    color: #fff;
+}
+
+
+/* colors */
+.kvms-color {
+    color: #f55323 !important;
+}
+
+
+/* cards */
+.kvm-card {
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+
+/* background */
+.back-img{
+    background-image:url('../img/bg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position: relative;
+    height:30rem;
+}
+.body {
+    background-color:rgba(0, 0, 255, 0.329);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position: relative;
+    height:37rem;
+}
+
+
+/* loader */
+#loader {
+    border: 10px solid rgba(39, 163, 39, 0.685);
+    border-radius: 50%;
+    border-top: 12px solid rgba(0, 0, 0, 0.472);
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* media query  */
+@media (max-width: 423px) {
+    .back-img{
+        background-image:url('../img/bg.jpg');
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        position: relative;
+        height:47rem;
+    }
+    .body {
+        background-color:rgba(0, 0, 255, 0.061);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        position: relative;
+        height:45rem;
+    }
+
+    .login-form-mobile {
+        padding-top: 9rem;
+    }
+    .login-title {
+        font-size: 20px;
+    }
+
+    .kvm-logo {
+        margin-left: 0rem;
+    }
+    .mobile {
+        padding: 10px;
+        margin-top: -5rem;
+        margin: 1rem;
+    }
+    .mobile .card {
+        height: 28rem;
+    }
+    .mobile .card .card-heade{
+        padding-top: 3rem;
+    }
+    .footer-view hr {
+        display: none;
+    }
+}
